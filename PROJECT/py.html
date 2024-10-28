@@ -1,0 +1,141 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payments</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body{
+		background: linear-gradient(to left, rgb(63, 179, 247),white,rgba(51, 115, 255, 0.986));
+	}
+.inlineimage {
+	max-width: 500px;
+	margin-right: 20px;
+	margin-left: 20px
+}
+
+.images {
+	display: inline-block;
+	max-width: 98%;
+	height: auto;
+	width: 22%;
+	margin: 1%;
+	left: 20px;
+	text-align: center;
+}
+.custom-button {
+            width: 90px;    /* Set the button width */
+            height: 40px;    /* Set the button height */
+            padding: 15px;   /* Add padding for better appearance */
+            font-size: 16px; /* Adjust the font size */
+            font-weight: bold;
+            background-color:rgb(233, 224, 220); /* Button background color */
+            color: white;    /* Text color */
+            border: black;    /* Remove border */
+            border-radius: 3px; /* Rounded corners */
+            cursor: pointer;  /* Pointer cursor on hover */
+        }
+        
+        .custom-button:hover {
+            background-color: wheat; /* Darken color on hover */
+        }
+
+</style>
+</head>
+<body>
+	<button class="custom-button"; style="color: white;"><a href="home.html">HOME</a></button>
+	<div class="hd">
+		<h1 style="color: black; text-align: center; font-weight: bold;">PAYMENT GATEWAY</h1>
+	</div>
+
+	<!-- Credit Card Payment Form - START -->
+	<div class="container-fluid" style="position: fixed;">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-offset-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="inlineimage">
+								<img class="img-responsive images"
+									src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png">
+								<img class="img-responsive images"
+									src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Discover-Curved.png">
+								<img class="img-responsive images"
+									src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Paypal-Curved.png">
+								<img class="img-responsive images"
+								    src="pngwing.png">
+							</div>
+						</div>
+					</div>
+					<form role="form" action="booktrains" method="post">
+						<div class="panel-body">
+
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>CARD NUMBER</label>
+										<div class="input-group">
+											<input type="tel" class="form-control"
+												placeholder="Valid Card Number" required/> <span
+												class="input-group-addon"><span
+												class="fa fa-credit-card"></span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-7 col-md-7">
+									<div class="form-group">
+										<label><span class="hidden-xs">EXPIRATION</span><span
+											class="visible-xs-inline">EXP</span> DATE</label> <input type="tel"
+											class="form-control" placeholder="MM / YY" required/>
+									</div>
+								</div>
+								<div class="col-xs-5 col-md-5 pull-right">
+									<div class="form-group">
+										<label>CV CODE</label> <input type="tel" class="form-control"
+											placeholder="CVC" required/>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>CARD OWNER</label> <input type="text"
+											class="form-control" placeholder="Card Owner Name" required/>
+									</div>
+								</div>
+							</div>
+                            <div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>UPI MODE</labeL>
+											<button ><a href="upi.html">Click Here</a></button>
+
+                                        </select>
+									</div>
+								</div>
+
+						</div>
+						<div class="panel-footer">
+							<div class="row">
+								<div class="col-xs-12">
+									<button class="btn btn-success btn-lg btn-block"><a href="recp.html">Confirm Payment</a></button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+<!-- jQuery library -->
+</html>

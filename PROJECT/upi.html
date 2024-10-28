@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment</title>
+    <style>
+        body {
+            background-image: url(v5.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        input[type="text"], input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .custom-button {
+            width: 90px;    /* Set the button width */
+            height: 40px;    /* Set the button height */
+            padding: 15px;   /* Add padding for better appearance */
+            font-size: 16px; /* Adjust the font size */
+            font-weight: bold;
+            background-color: rgb(233, 224, 220); /* Button background color */
+            color: white;    /* Text color */
+            border: black;    /* Remove border */
+            border-radius: 3px; /* Rounded corners */
+            cursor: pointer;  /* Pointer cursor on hover */
+        }
+        
+        .custom-button:hover {
+            background-color: wheat; /* Darken color on hover */
+        }
+        .bg1{
+        
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 500px;                            
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <button class="custom-button"; style="color: white;"><a href="home.html">HOME</a></button>
+<h2 style="color: white;">UPI Payment</h2>
+<form id="upiPaymentForm dataForm" onsubmit="storeData(event)" action="your-backend-endpoint" method="POST" class="bg1">
+    
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="upiId">UPI ID:</label>
+    <input type="text" id="upiId" name="upiId" required placeholder="example@upi">
+
+
+    <label for="amount" style="align-items: center;">Amount (INR):</label>
+    <h2>199/-</h2>
+    <button type="submit"><a href="recp.html">Pay Now</a></button>
+</form>
+
+
+
+<script>
+    document.getElementById('upiPaymentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Here, you would typically add your payment processing logic
+        alert("Payment request submitted!");
+        // You could use fetch or axios to send data to your backend for processing
+    });
+</script>
+
+</body>
+</html>

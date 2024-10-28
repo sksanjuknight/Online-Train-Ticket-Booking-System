@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Ticket Receipt</title>
+    <style>
+        body {
+            background-image:url(v3.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .receipt {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+        .custom-button {
+            width: 90px;    /* Set the button width */
+            height: 40px;    /* Set the button height */
+            padding: 15px;   /* Add padding for better appearance */
+            font-size: 16px; /* Adjust the font size */
+            font-weight: bold;
+            background-color:rgb(233, 224, 220); /* Button background color */
+            color: white;    /* Text color */
+            border: black;    /* Remove border */
+            border-radius: 3px; /* Rounded corners */
+            cursor: pointer;  /* Pointer cursor on hover */
+        }
+        
+        .custom-button:hover {
+            background-color: wheat; /* Darken color on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="custom-button"; style="color: white;"><a href="home.html">HOME</a></button>
+    <div class="receipt">
+        <h1 style="color: rgb(67, 138, 219);"><u>Train Ticket Receipt</u></h1>
+
+        <p><strong>Customer Name:</strong>Sanjay</p>
+        <p><strong>Train Number:</strong> 16518</p>
+        <p><strong>Date:</strong> October 31, 2024</p>
+        
+        <table>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Hubli</td>
+                <td>Bangalore</td>
+                <td>02:00 PM</td>
+                <td>Rs.199/-</td>
+            </tr>
+        </table>
+
+        <p class="total">Total Price: Rs.199/-</p>
+        <div class="footer">
+            <p>Thank you for traveling with us!</p>
+            <p>Contact Us: mvps.railways@gmail.com</p><br>
+            <p style="color: blue;">VISIT AGAIN....!</p>
+        </div>
+    </div>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("v5.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+           background: linear-gradient(to right, orange,white,green);
+            text-align: center;
+        
+        }
+        .form-container {
+            background: linear-gradient(to right, #7dacf8, #1749ff);
+            padding: 90px;
+            border-radius: 10px;
+            box-shadow: 04px 15px rgba(69, 134, 219, 0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .custom-button {
+            width: 90px;    /* Set the button width */
+            height: 30px;    /* Set the button height */
+            padding: 5px;   /* Add padding for better appearance */
+            font-size: 16px;/* Adjust the font size */
+            font-weight: bold;
+            background-color:rgb(233, 224, 220); /* Button background color */
+            color: white;    /* Text color */
+            border: black;    /* Remove border */
+            border-radius: 3px; /* Rounded corners */
+            cursor: pointer;  /* Pointer cursor on hover */
+        }
+        
+        .custom-button:hover {
+            background-color: wheat; /* Darken color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1 style= "color: black; margin-left: 180px; margin-right: 180px;"><marquee direction="left">WELCOME TO MVPS RAILWAYS TICKET BOOKING</marquee></h1>
+    <button class="custom-button"; style="color: white; margin-top: 25px; text-align: center;"><a href="regg.html">Logout</a></button>
+    <div class="form-container">
+        <form id="bookingForm">
+            <label for="from">From:</label>
+
+            <select id="text" name="from" required>
+                <option value="1">Bangalore</option>
+                <option value="2">Mysore</option>
+                <option value="3">Hubli</option>
+                <option value="4">Vijayapur</option>
+                <option value="5">Gadag</option>
+                <option value="5">Koppal</option>
+                <option value="5">Bidar</option>
+                <option value="5">Vijayanagar</option>
+                <option value="5">Rayachur</option>
+                <option value="5">Chamaraj Nagar</option>
+                <option value="5">Mangalore</option>
+                <option value="5">Tumakur</option>
+                <option value="5">Ballari</option>
+                <option value="5">Honnavar</option>
+            </select>
+            
+
+           
+
+
+
+            <label for="to">To:</label>
+            <select id="To" name="To" required>
+                <option value="5">Gadag</option>
+                <option value="5">Koppal</option>
+                <option value="2">Mysore</option>
+                <option value="3">Hubli</option>
+                <option value="4">Vijayapur</option>
+                <option value="1">Bangalore</option>
+                <option value="5">Bidar</option>
+                <option value="5">Vijayanagar</option>
+                <option value="5">Rayachur</option>
+                <option value="5">Chamaraj Nagar</option>
+                <option value="5">Mangalore</option>
+                <option value="5">Tumakur</option>
+                <option value="5">Ballari</option>
+                <option value="5">Honnavar</option>
+            </select>
+
+            <label for="date">Date of Journey:</label>
+            <input style="width: 678px;" type="date" id="date" name="date" required>
+
+            <label for="passengers">Number of Passengers:</label>
+            <select id="passengers" name="passengers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button type="submit" style="margin-top: 30px;"><a href="avail.html" style="text-decoration: none;">Search Trains</a></button>
+        </form>
+    </div>
+</body>
+</html>
